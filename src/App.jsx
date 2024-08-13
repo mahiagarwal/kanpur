@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import About from './pages/About';
 import Services from './pages/Services'; 
 import Contact from './pages/Contact';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 import './App.css'; 
 
 const App = () => {
@@ -14,6 +16,8 @@ const App = () => {
       <div className="main-content">
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/signup' element={<Signup/>}/>
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
