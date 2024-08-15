@@ -1,0 +1,16 @@
+/* Home.css */
+.home-container {
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .carousel-section {
+    margin-top: 300px; /* Adds space between the Navbar and Carousel */
+    margin-bottom: 50px; /* Space between Carousel and Trending */
+  }
+  
+  .trending-section {
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
