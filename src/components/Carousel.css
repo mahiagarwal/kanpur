@@ -1,0 +1,59 @@
+/* CarouselStyles.css */
+
+.carousel-container {
+    width: 70%;  /* Control the overall width of the carousel */
+    max-width: 20000px;  /* Set a maximum width */
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  .custom-carousel .carousel .slide img {
+    width: 100%;
+    height: 400px;  /* Ensure the image is in a rectangular shape */
+    object-fit: cover;  /* Ensure the image covers the entire area */
+    border-radius: 8px;
+  }
+  
+  /* Custom Arrows */
+  .custom-carousel .control-arrow {
+    background: transparent;  /* Remove black background */
+    border: none;
+    color: #666;  /* Slightly gray arrow color */
+    font-size: 24px;
+  }
+  
+  .custom-carousel .control-arrow:hover {
+    background: rgba(255, 255, 255, 0.3);  /* Add a subtle background on hover */
+  }
+  
+  .custom-carousel .carousel .control-prev {
+    left: 20px;
+  }
+  
+  .custom-carousel .carousel .control-next {
+    right: 20px;
+  }
+  
+  /* Custom Dots */
+  .custom-carousel .carousel .control-dots {
+    position: absolute;
+    bottom: 10px;  /* Position dots on the image */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .custom-carousel .carousel .control-dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #bbb;
+    transition: background 0.3s;
+  }
+  
+  .custom-carousel .carousel .control-dots .dot.selected {
+    background: #333;
+  }
+  
