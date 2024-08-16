@@ -12,7 +12,7 @@ const Navbar = () => {
                     </div> */}
                     <div className="delivery">
                         <span>Delivering to</span>
-                        <p>Meerut 250001</p>
+                        <p>kanpur 208001</p>
                     </div>
                 </div>
                 <div className="navbar-center">
