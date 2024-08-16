@@ -1,56 +1,168 @@
-/* Navbar.css */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    box-sizing: border-box; 
-    overflow-x: auto; 
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat; 
-  }
-  
-  .Logo {
-    font-size: 32px;
-    color: darkblue;
-    font-weight: 700;
-    text-decoration: none; 
-  }
-  
-  .navbar {
-    display: flex;
-    align-items: center;
-    margin: 0; 
-  }
-  
-  .navbar a {
-    position: relative;
-    font-size: 18px;
-    color: black;
-    font-weight: 500;
-    margin-left: 40px;
-    text-decoration: none; 
-  }
-  
-  .navbar a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: black;
-    transition: width .3s;
-  }
-  
-  .navbar a:hover::before {
-    width: 100%;
-  }
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #232F3E;
+  padding: 10px 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  height: 60px;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Navbar Left (Logo & Location) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  margin-right: 15px;
+}
+
+.delivery span {
+  font-size: 12px;
+}
+
+.delivery p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Navbar Center (Search Bar) */
+.navbar-center {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-input {
+  width: 400px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-btn {
+  background-color: #febd69;
+  border: none;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-btn img {
+  width: 20px;
+}
+
+/* Navbar Right (Language, Account, Orders, Cart) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.lang-select {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.flag-icon {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.lang-select span {
+  font-size: 14px;
+  margin-right: 90px;
+}
+
+.account span, .orders span {
+  font-size: 12px;
+  margin-right: 60px;
+}
+
+.account p, .orders p, .cart p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart span {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  background-color: #febd69;
+  color: black;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.cart img {
+  width: 30px;
+  margin-right: 5px;
+  margin-right: 20px;
+}
+
+
+/* Submenu Navbar Styles */
+/* Submenu Navbar Styles */
+.submenu {
+  background-color: #131921;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.submenu-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submenu-item {
+  margin-right: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Ensures icon and text are vertically aligned */
+}
+
+.submenu-item i {
+  margin-right: 8px; /* Adds space between the icon and text */
+}
+
+/* Hover Effects */
+.submenu-item:hover {
+  text-decoration: underline;
+}
